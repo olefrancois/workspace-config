@@ -1,0 +1,14 @@
+[alias]
+        ckt = checkout
+        ft = fetch
+        st = status
+[core]
+        excludesfile = /home/username/.gitignore_global
+        autocrlf = input
+[user]
+        email = john.doe@mail.com
+        name = john doe
+[merge]
+        defaultToUpstream = true
+[push]
+        default = simple
