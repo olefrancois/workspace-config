@@ -28,6 +28,7 @@ https://doc.ubuntu-fr.org/gnome-shell
 
 Arc Menu 
 * https://github.com/LinxGem33/Arc-Menu
+issue : https://askubuntu.com/questions/972489/arc-menu-gnome-extension-wont-install-in-ubuntu-17-10
 * https://github.com/jderose9/dash-to-panel
 * https://github.com/JasonLG1979/gnome-shell-extensions-mediaplayer/
 * https://github.com/paradoxxxzero/gnome-shell-system-monitor-applet
