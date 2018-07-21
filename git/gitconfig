@@ -1,14 +1,37 @@
 [alias]
-        ckt = checkout
-        ft = fetch
+	ckt = checkout
+	ft = fetch
         st = status
+
+	# Will unstage the files you just added
+	unstage = reset HEAD --
+	# Easily log your changes for your standup
+	standup = log --oneline --since=yesterday.midnight
 [core]
-        excludesfile = /home/username/.gitignore_global
-        autocrlf = input
+	excludesfile = ~/.gitignore_global
+	editor = vim
 [user]
-        email = john.doe@mail.com
-        name = john doe
+	name = olivier lefrancois
 [merge]
-        defaultToUpstream = true
+	defaultToUpstream = true
+[commit]
+	template = /home/olivier/git.d/git-commit-template
+[color "status"]
+	added = green
+	changed = yellow
+	untracked = red
 [push]
-        default = simple
+	default = simple
+[diff]
+  # Use better prefix (c, i, w) instead of 'a' and 'b' in diff
+  # c stands for commit, i stands for index, w stands work tree
+  mnemonicPrefix = true
+[fetch]
+  # Fetch will automatically behave as if the --prune optoin was given.
+  prune = true
+[help]
+  # Automagically correct and execute mistyped commands
+  autocorrect = 1
+
+[init]
+	templatedir = ~/git.d/git-templates
